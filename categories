@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browse by Category</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Browse Apps by Category</h1>
+
+  <section>
+    <h2>Soft Skills & Communication</h2>
+    <ul>
+      <li><a href="https://www.bodyswaps.co" target="_blank">Bodyswaps</a> – Practice job interviews and giving feedback in VR.</li>
+      <li><a href="https://virti.com" target="_blank">Virti</a> – AI-powered soft skill training with avatars.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Immersive Storytelling</h2>
+    <ul>
+      <li><a href="[link]">Anne Frank’s House</a> – Explore the secret annex in VR.</li>
+      <li><a href="[link]">Now Is the Time</a> – MLK’s dream brought to life in immersive VR.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Real-World Training</h2>
+    <ul>
+      <li><a href="[link]">Skillveri Workshop</a> – Simulate hands-on vocational skills.</li>
+      <li><a href="[link]">MadXR</a> – Train in lockout/tagout procedures.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Academic Support Tools</h2>
+    <ul>
+      <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a> – AI-powered writing and tutoring.</li>
+      <li><a href="https://gradescope.com" target="_blank">Gradescope</a> – Efficient AI-assisted grading.</li>
+    </ul>
+  </section>
+</body>
+</html>
