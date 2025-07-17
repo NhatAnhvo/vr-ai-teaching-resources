@@ -3,30 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <title>Find the Right Tool</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body style="background-color: #f4f4f4; font-family: Arial, sans-serif;">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
 
-  <header style="background-color: #333; color: white; padding: 20px;">
+    header {
+      background-color: #333;
+      color: white;
+      padding: 25px 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #ffdd57;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    details {
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffeaa7;
+    }
+
+    details:nth-of-type(1) summary { background-color: #ffdd57; }
+    details:nth-of-type(2) summary { background-color: #ffd738; }
+    details:nth-of-type(3) summary { background-color: #ffcd00; }
+    details:nth-of-type(4) summary { background-color: #ffe431; }
+    details:nth-of-type(5) summary { background-color: #fff68f; }
+    details:nth-of-type(6) summary { background-color: #ffeaa7; }
+
+    details div {
+      background-color: #000;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      padding-left: 20px;
+    }
+
+    footer li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
     <h1>Browse Teaching Tools by Purpose</h1>
     <nav>
-      <a href="index.html" style="color: #ffdd57; margin-right: 15px;">Home</a>
-      <a href="resources.html" style="color: #ffdd57; margin-right: 15px;">Resources</a>
-      <a href="blog.html" style="color: #ffdd57;">Blog</a>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="blog.html">Blog</a>
     </nav>
   </header>
 
-  <main style="padding: 30px;">
-
+  <main>
     <p>Use the questions below to find applications aligned with your instructional needs:</p>
 
-    <div style="padding: 15px; background-color: #000000; margin-top: 25px;">
-
+    <div>
       <!-- Accordion 1 -->
       <details>
-        <summary style="cursor: pointer; background-color: #ffdd57; padding: 10px;">Are you introducing students to VR for the first time?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Are you introducing students to VR for the first time?</summary>
+        <div>
+          <ul>
             <li><strong>Meta First Contact</strong> – A playful, guided intro to VR with a robot companion.</li>
             <li><strong>Bodyswaps</strong> – Soft skills simulations with reflective guidance.</li>
             <li><strong>Virti</strong> – Low-barrier entry to conversational VR via AI avatars.</li>
@@ -36,9 +124,9 @@
 
       <!-- Accordion 2 -->
       <details>
-        <summary style="cursor: pointer; background-color: #ffd738; padding: 10px;">Do you want students to explore real-world places or experiences?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Do you want students to explore real-world places or experiences?</summary>
+        <div>
+          <ul>
             <li><strong>Wander</strong> – Virtual tourism to global landmarks via Street View.</li>
             <li><strong>Mission: ISS</strong> – Simulate life and tasks aboard the ISS.</li>
             <li><strong>Anne Frank House</strong> – Step into a historically accurate WWII hiding place.</li>
@@ -48,9 +136,9 @@
 
       <!-- Accordion 3 -->
       <details>
-        <summary style="cursor: pointer; background-color: #ffcd00; padding: 10px;">Are you teaching empathy or storytelling through lived experiences?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Are you teaching empathy or storytelling through lived experiences?</summary>
+        <div>
+          <ul>
             <li><strong>We Live Here</strong> – Explore homelessness through memory objects and narration.</li>
             <li><strong>Now Is the Time</strong> – Engage with themes from MLK’s modern march.</li>
             <li><strong>Notes on Blindness</strong> – Understand blindness through immersive audio diaries.</li>
@@ -60,9 +148,9 @@
 
       <!-- Accordion 4 -->
       <details>
-        <summary style="cursor: pointer; background-color: #ffe431; padding: 10px;">Do your students need hands-on or vocational training?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Do your students need hands-on or vocational training?</summary>
+        <div>
+          <ul>
             <li><strong>Skillveri Workshop</strong> – Practice welding, painting, and HVAC skills in VR.</li>
             <li><strong>MadXR</strong> – Lockout/Tagout (LOTO) procedure simulations.</li>
             <li><strong>Risk Hunt</strong> – Find workplace hazards in a virtual factory.</li>
@@ -73,9 +161,9 @@
 
       <!-- Accordion 5 -->
       <details>
-        <summary style="cursor: pointer; background-color: #fff68f; padding: 10px;">Do you want to enhance academic writing, grading, or research support with AI?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Do you want to enhance academic writing, grading, or research support with AI?</summary>
+        <div>
+          <ul>
             <li><strong>ChatGPT</strong> – Provide writing help, feedback, or content generation.</li>
             <li><strong>Gradescope</strong> – AI-assisted grading for exams and assignments.</li>
             <li><strong>NotebookLM</strong> – Organize and analyze readings and research.</li>
@@ -86,18 +174,39 @@
 
       <!-- Accordion 6 -->
       <details>
-        <summary style="cursor: pointer; background-color: #ffeaa7; padding: 10px;">Are you designing new experiences or prototypes in XR?</summary>
-        <div style="border: thin solid #F1F3F4; padding: 10px 15px;">
-          <ul style="color: white;">
+        <summary>Are you designing new experiences or prototypes in XR?</summary>
+        <div>
+          <ul>
             <li><strong>ShapesXR</strong> – Collaborate on 3D ideas and immersive storyboards.</li>
             <li><strong>Captivatar</strong> – Build branded 360° and XR promotional experiences.</li>
             <li><strong>SynergyXR</strong> – Host live training and team-based VR spaces.</li>
           </ul>
         </div>
       </details>
-
     </div>
   </main>
+
+  <footer>
+    <h2>References</h2>
+    <ul>
+      <li>Meta First Contact – Meta Quest Platform</li>
+      <li>Bodyswaps – https://bodyswaps.co/</li>
+      <li>Virti – https://virti.com/</li>
+      <li>Wander – https://www.wander.com/</li>
+      <li>Mission: ISS – Oculus/Meta Store</li>
+      <li>Anne Frank House VR – AnneFrank.org</li>
+      <li>We Live Here – VR for Good Initiative</li>
+      <li>Notes on Blindness – http://www.notesonblindness.co.uk/</li>
+      <li>Skillveri – https://www.skillveri.com/</li>
+      <li>MadXR – MadXR.com</li>
+      <li>PNX Labs – https://www.pnxlabs.com/</li>
+      <li>Gradescope – https://gradescope.com/</li>
+      <li>NotebookLM – https://notebooklm.google/</li>
+      <li>Examind – https://examind.ai/</li>
+      <li>ShapesXR – https://www.shapesxr.com/</li>
+      <li>SynergyXR – https://www.synergyxr.com/</li>
+    </ul>
+  </footer>
 
 </body>
 </html>
