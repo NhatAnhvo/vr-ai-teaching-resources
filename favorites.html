@@ -3,56 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Favorites</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Favorites - Teaching Tools</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
+      background-color: #f9f9f9; /* Match browsing.html */
     }
     header {
-      background-color: #003366;
+      background-color: #004d66; /* Same header color as browsing.html */
       color: white;
-      padding: 1em;
+      padding: 1rem;
       text-align: center;
+    }
+    nav {
+      margin-top: 0.5rem;
     }
     nav a {
       color: white;
-      margin: 0 10px;
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
     }
-    .favorites-container {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
       padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-    .favorite-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: center;
-      padding: 1.5rem;
-      transition: transform 0.2s ease-in-out;
+    .app-card {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
-    .favorite-card:hover {
-      transform: translateY(-5px);
+    .app-card:hover {
+      transform: scale(1.02);
     }
-    .favorite-card img {
+    .app-card img {
       width: 80px;
       height: 80px;
-      margin-bottom: 1rem;
+      object-fit: contain;
+      margin-right: 1rem;
     }
-    .favorite-card h3 {
-      margin-bottom: 0.5rem;
-      color: #003366;
+    .app-info h2 {
+      margin: 0 0 0.5rem;
+      color: #004d66;
     }
-    .favorite-card p {
-      font-size: 0.95rem;
+    .app-info p {
+      margin: 0;
       color: #555;
     }
   </style>
